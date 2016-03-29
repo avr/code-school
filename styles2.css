@@ -1,0 +1,24 @@
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tweet {
+    width: 33%;
+    float: left;
+}
+
+.tweet .inner {
+    border: 1px solid orange;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10pxf;
+}
+
+.tweet img {
+    max-width: calc(100% + 20px);
+    margin: -10px auto 10px;
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+}

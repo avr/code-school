@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+
+</head>
+<body>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore numquam expedita non deserunt voluptatum magni enim excepturi cumque omnis, repellat!</p>
+<p>Sunt maxime suscipit sint quidem, quam consequatur numquam iusto magni est laudantium beatae alias impedit nesciunt, amet! Ea, nisi ipsum.</p>
+
+<a href="#" class="btn">Click Me</a>
+<a href="#" class="btn">Click Me</a>
+<a href="#" class="btn">Click Me</a>
+<a href="#" class="btn">Click Me</a>
+
+<div class="container">
+    <div class="tab-item"></div>
+    <div class="tab-item"></div>
+    <div class="tab-item"></div>
+    <div class="tab-item"></div>
+</div>
+<script>
+
+    var disabled = function( a, b) {
+        console.log("Index: " + a);
+        console.log("Current Class: " + b);
+        return 'btn-' + a;
+    }
+
+    $(document).ready( function() {
+
+        $('a').addClass( disabled );
+
+        var container = $('<div>').addClass('tab-container');
+
+        var tabItem = $('<div>');
+
+        $('body').append( container );
+    });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+AddType application/pdf .pdf
+
+<LocationMatch "\.(?i:pdf)$">
+    ForceType application/pdf
+    Header set Content-Disposition inline
+</LocationMatch>
