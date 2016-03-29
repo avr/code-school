@@ -25,8 +25,6 @@
 <script>
 
     var disabled = function( a, b) {
-        console.log("Index: " + a);
-        console.log("Current Class: " + b);
         return 'btn-' + a;
     }
 
@@ -34,11 +32,10 @@
 
         $('a').addClass( disabled );
 
-        var container = $('<div>').addClass('tab-container');
+        $('a').on('click', function() {
+            console.log('YAY');
+        })
 
-        var tabItem = $('<div>');
-
-        $('body').append( container );
     });
 
 </script>
